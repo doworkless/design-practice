@@ -1,0 +1,66 @@
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: rgb(244, 248, 252);
+    
+    padding: 0 20px;
+}
+.left p{
+    font-size: 30px;
+    align-content: center;
+    
+    
+}
+ul{
+    list-style: none;
+}
+.right .rightClass{
+    display: flex;
+    list-style: none;
+   gap: 20px;
+   justify-content: center;
+  
+}
+.right{
+    display: flex;
+}
+.right ul li{
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 15px;
+}
+.color{
+    color: black;
+    text-decoration: none;
+
+}
+
+.mainList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: absolute;
+    top: 100%;
+    width: 90px;
+    display: none;
+}
+
+
+.mainList:hover .list{
+    display: flex;
+}
+
+
