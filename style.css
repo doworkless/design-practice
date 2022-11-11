@@ -1,0 +1,28 @@
+*{
+    background-color: gray;
+    color: antiquewhite;
+    margin-top: 0px;
+    padding: 0;
+}
+.container{
+    float: right;
+    padding: left 20px; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.container li{
+    display: inline-block;
+    padding: 15px;
+}
+
+
+.navBar{
+    display: flex;
+    flex-direction: column;
+    gap: 40vh;
+    justify-content: center;
+    align-items: center;
+
+}
