@@ -1,16 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 100%;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
 header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
-    background-color: rgb(244, 248, 252);
-    
-    padding: 0 20px;
+    padding: 30px 150px;
+    position: relative;
 }
+img{
+    width: 100%;
+    height: 100%;
+}
+header{
+    height: 100vh;
+    width: 100%;
+   
+    background-image: url("professional\ 3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: center;
+    background-attachment:fixed;
+    animation: headani 7s ease-in-out infinite;
+    transition: all 5s ;
+}
+
+@keyframes headani {
+    0%{
+        background-image: url("professional\ 3.jpg");
+    }
+    100%{
+        background-image: url("professional\ 2.webp");
+    }
+}
+
 .left p{
-    font-size: 30px;
+    font-size: 35px;
     align-content: center;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 ul{
@@ -32,11 +67,7 @@ ul{
     color: black;
     font-size: 15px;
 }
-.color{
-    color: black;
-    text-decoration: none;
 
-}
 
 .mainList{
     display: flex;
@@ -44,6 +75,9 @@ ul{
     align-items: center;
     justify-content: center;
     position: relative;
+    color: white;
+    
+    
 
     
 }
@@ -62,5 +96,111 @@ ul{
 .mainList:hover .list{
     display: flex;
 }
+.mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 200px;
+    
+  
+    
+}
+.content{
+    display: flex;
+   
+    
+    justify-content: center;
+    align-items: center;
+    color: rgb(221, 37, 89);
+ 
+}
+.box{
+    display: flex;
+    justify-content: center;
+   gap: 30px;
+height: 300px;
+width: 700px;
 
+}
+.mx1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    color: white;
+}
+.mx2{
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    color: white;
+}
+.box3{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    color: white;
+}
 
+.box2{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    width: 100vw;
+    height: 70px;
+}
+button{
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   font-size: 20px;
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+    padding-top: 15px;
+    border: 1px solid white;
+    
+}
+ button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.deActive{
+    transform: translateX(-500px);
+}
+.active{
+    transform: translateX(0px);
+}
+
+@media(max-width:900px){
+    html{
+        font-size: 60%;
+    }
+    .menu-btn{
+        display: flex;
+    }
+    .right{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 50%;
+        flex-direction: column;
+        background-color: antiquewhite;
+      
+    }
+    .rightClass{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rightClass a{
+        color: black;
+    }
+
+}
