@@ -1,8 +1,19 @@
-let a = document.getElementById("home");
-let box = document.getElementById('box');
-a.addEventListener("mouseover", ()=>{
-    console.log("enter the");
-// box.classList.add('box2');
-// box.classList.remove('box1');
-box.classList.toggle('box2');
-})
+const element =document.getElementById("menu-btn");
+var adClass = document.getElementById("right");
+element.addEventListener("click", ()=>{
+    console.log("hello")
+     if(adClass.classList.contains('active')){
+        console.log(adClass)
+        adClass.classList.add('deActive')
+        adClass.classList.remove('active')
+        
+     }else{
+         adClass.classList.add("active");
+              adClass.classList.remove("deActive"); 
+     }
+});
+// function myFunction(){
+//    console.log("helo")
+//     adClass.classList.add("deactive");
+//     adClass.classList.remove("Active");
+// }
