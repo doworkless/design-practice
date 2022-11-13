@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Project</title>
+    <script src="https://kit.fontawesome.com/7aa5239422.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="navBar">
         <div class="container">
             <h1>BONATIVA</h1>
-            <nav>
-                <ul>
+            <nav class="nav" >
+                <ul id="nav">
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#blog">BLOG</a></li>
@@ -21,18 +22,86 @@
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
+            <div class="menubtn" onclick="myfunction()" >
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
         </div>
         <div class="heading">
             <h2>MODERN AGENCY</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, in?</p>
             <button class="btn">SEE MORE</button>
         </div>
-       
-
-        
-        
-        
     </div>
+
+    <div>
+        <div>
+            <div class="modern">
+                <h1 class="modern">MODERN DIGITAL<span>AGENCY</span> </h1>
+                <p>We Are A Creative Agency Located In Sydney, Australia. It Is A Long Established Fact That A Reader Will Be Distracted By The Readable Content.</p>
+
+            </div>
+            <div id="creative">
+                <div class="creative-first-row">
+                    <div class="creative-row">
+                        <div class="icon">
+                            <i class="fa-sharp fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="iconContent">
+                            <h4>CREATIVE DESIGNS</h4>
+                            <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut ullamcorper tellus. Cras porttitor massa.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="creative-row">
+                        <div class="icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="iconContent">
+                            <h4>CREATIVE DESIGNS</h4>
+                            <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut ullamcorper tellus. Cras porttitor massa.</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="creative-first-row">
+                    <div class="creative-row">
+                        <div class="icon">
+                            <i class="fa-solid fa-mobile"></i>
+                        </div>
+                        <div class="iconContent">
+                            <h4>CREATIVE DESIGNS</h4>
+                            <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut ullamcorper tellus. Cras porttitor massa.</p>
+                        </div>
+                    </div>
+                    <div class="creative-row" >
+                        <div>
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="iconContent">
+                            <h4>CREATIVE DESIGNS</h4>
+                            <p>Vivamus congue diam vitae tortor imperdiet congue. Nullam sagittis, tristique diam, ut ullamcorper tellus. Cras porttitor massa.</p>
+                        </div>
+                 
+                    </div>
+                    
+                
+
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <script>
+        var Nav = document.getElementById("nav");
+        let state=true
+        function myfunction(){
+            Nav.classList.toggle("active");
+        }
+
+       </script>
     
 </body>
 </html>
