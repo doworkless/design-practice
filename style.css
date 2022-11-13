@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  background-image: url("../professional.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: blur(2px); */
+  background-blend-mode: soft-light;
+  height: 100vh;
+  width: 100%;
+  animation: head 5s infinite alternate;
+transition: all 5s;
+}
+@keyframes head {
+    0%{
+        background-image: url("../professional.jpg");
+    }
+    100%{
+        background-image: url("../professional2.jpg");
+    }
+}
+.nevegation {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  text-align: center;
+  padding: 20px 0;
+  margin: 0px 150px;
+}
+@media screen and (max-width: 1050px) {
+  .nevegation {
+    margin: 30px 20px;
+  }
+}
+.left {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+  font-size: 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.menu-link {
+  display: flex;
+
+  list-style: none;
+  /* border: 1px solid black; */
+  align-items: center;
+  gap: 20px;
+  font-size: 13px;
+  color: #fff;
+}
+.sub-contenar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+}
+.sub-contenar button {
+  /* width: 100px; */
+  border-radius: 10px;
+  font-size: 16px;
+
+  font-family: "sans-serif, Tahoma Geneva Verdana";
+}
+.MX1 {
+  display: flex;
+  gap: 30px;
+  align-content: center;
+}
+.mx1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 70px;
+  color: #fff;
+}
+.mx2 {
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 70px;
+  color: #fff;
+}
+.MX2 {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  color: #fff;
+}
+.Mx3 {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+.Mx3 button {
+  color: black;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  margin-top: 10px;
+  display: inline-block;
+}
